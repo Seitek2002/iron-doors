@@ -1,4 +1,4 @@
-$('.single-product__slider').slick({
+$('.single-product__slider--mobile').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

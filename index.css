@@ -360,6 +360,10 @@ span.product_label-tooltip-span {
     color: #231f20;
 }
 
+.single-product__slider--mobile {
+    display: block;
+}
+
 .single-product__slider--desctop {
     display: none;
 }
