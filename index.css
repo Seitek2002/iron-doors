@@ -507,8 +507,6 @@ span.product_label-tooltip-span {
     }
 
     .single-product__content {
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr); */
         display: flex;
         justify-content: space-around;
     }
