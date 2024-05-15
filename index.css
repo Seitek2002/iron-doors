@@ -405,11 +405,7 @@ span.product_label-tooltip-span {
 }
 
 .single-product__slider {
-    /* display: grid;
-    grid-template-columns: minmax(0, 161px) minmax(0, 684px);
-    max-height: 684px;
-    position: relative; */
-    max-width: 50%;
+    max-width: 40%;
     max-height: 684px;
 }
 @media screen and (max-width:768px) {
@@ -514,6 +510,7 @@ span.product_label-tooltip-span {
         /* display: grid;
         grid-template-columns: repeat(2, 1fr); */
         display: flex;
+        justify-content: space-around;
     }
 
     .single-product__info {
