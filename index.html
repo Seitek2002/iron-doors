@@ -7,14 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./slick-options.css">
+    <link rel="stylesheet" href="./modal.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <div class="single-product">
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__slider">
+                <img src="./hero-banner.png" alt="">
+                <img src="./hero-banner.png" alt="">
+                <img src="./hero-banner.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="single-product">
         <div class="container">
             <div class="single-product__content">
-                <div class="single-product__slider--mobile">
+                <div class="single-product__slider">
                     <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
                     <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
                     <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
@@ -29,40 +40,6 @@
                     <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
                     <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
                     <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                </div>
-                <div class="single-product__slider--desctop">
-                    <div class="slider-nav">
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div class="slider-nav__item"><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                    </div>
-                    <div class="slider-for">
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                        <div><img src="https://cghardware.com/wp-content/uploads/2023/04/Rectangle-19661.png" alt=""></div>
-                    </div>
                 </div>
                 <div class="single-product__info">
                     <h1>Iron Doors</h1>
@@ -194,43 +171,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="single-product__description doors-description">
-                        <div class="details-and-specs">
-                            <div class="accordion-item">
-                                <h2 class="title">
-                                    Details and Specs:
-                                </h2>
-                                <ul>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
-                                            <path fill="#2F69FF" fill-rule="evenodd"
-                                                d="M4.397 5.913 9.63 0 12 1.816 4.755 10 0 6.129l2.022-2.15 2.375 1.934Z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>
-                                            Door size 36” x 80” </span>
-                                    </li>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
-                                            <path fill="#2F69FF" fill-rule="evenodd"
-                                                d="M4.397 5.913 9.63 0 12 1.816 4.755 10 0 6.129l2.022-2.15 2.375 1.934Z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>
-                                            Jamb size 37-½” x 82-1/16” </span>
-                                    </li>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
-                                            <path fill="#2F69FF" fill-rule="evenodd"
-                                                d="M4.397 5.913 9.63 0 12 1.816 4.755 10 0 6.129l2.022-2.15 2.375 1.934Z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>
-                                            Jamb depth 2-9/16” </span>
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="single-product__accordeon pay">
+                        <h4>$1,854.00</h4>
+                        <div class="single-product__accordeon counter" id="counter">
+                            <button class="minus"><img src="./minus.svg" alt=""></button>
+                            <span class="span">1</span>
+                            <button class="plus"><img src="./plus.svg" alt=""></button>
                         </div>
+                        <button class="single-product__accordeon btn">Order now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doors-description">
+        <div class="container">
+            <div class="doors-description__content">
+                <div class="doors-description__info">
+                    <h2>
+                        Crystalia Glass offers a comprehensive service.
+                    </h2>
+                    <div class="blue-divider"></div>
+                    <p>
+                        We encompass design, manufacturing, and installation of custom steel and glass doors. Each item
+                        comes fully warranted and supported by our dedicated service department.
+                    </p>
+                    <p>
+                        The craftsmanship of steel and its fabrication presents a unique alternative for designers,
+                        blending custom steel creations with patterned glass to achieve eye-catching designs.
+                    </p>
+                </div>
+                <div class="doors-description__details">
+                    <div class="flex">
                         <div class="handle-and-lock-specs">
                             <div class="accordion-item">
                                 <h2 class="title">
@@ -276,16 +248,44 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="compatible">
+                        <div class="details-and-specs">
                             <div class="accordion-item">
-                                <p>
-                                    Compatible with BALDWIN Door Lever and Door Knobs In-stock single doors come
-                                    with a single pre-drilled hole. Handles offered on the CG Hardware website do
-                                    not come installed on the door upon delivery. The lock has to be installed after
-                                    the door installation is complete. </p>
-
+                                <h2 class="title">
+                                    Details and Specs:
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                                            <path fill="#2F69FF" fill-rule="evenodd"
+                                                d="M4.397 5.913 9.63 0 12 1.816 4.755 10 0 6.129l2.022-2.15 2.375 1.934Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>
+                                            Door size 36” x 80” </span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                                            <path fill="#2F69FF" fill-rule="evenodd"
+                                                d="M4.397 5.913 9.63 0 12 1.816 4.755 10 0 6.129l2.022-2.15 2.375 1.934Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>
+                                            Jamb size 37-½” x 82-1/16” </span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                                            <path fill="#2F69FF" fill-rule="evenodd"
+                                                d="M4.397 5.913 9.63 0 12 1.816 4.755 10 0 6.129l2.022-2.15 2.375 1.934Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>
+                                            Jamb depth 2-9/16” </span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="flex">
                         <div class="hinges">
                             <div class="accordion-item">
                                 <h2 class="title">
@@ -300,26 +300,6 @@
                                         </svg>
                                         <span>
                                             Weld-on bullet ball-bearing washer hinges </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="packaging">
-                            <div class="accordion-item">
-                                <h2 class="title">
-                                    Packaging:
-                                </h2>
-                                <ul>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
-                                            <path fill="#2F69FF" fill-rule="evenodd"
-                                                d="M4.397 5.913 9.63 0 12 1.816 4.755 10 0 6.129l2.022-2.15 2.375 1.934Z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span>
-                                            The doors are wrapped in plastic film and foam, covered in cardboard
-                                        </span>
-
                                     </li>
                                 </ul>
                             </div>
@@ -343,10 +323,87 @@
                             </div>
                         </div>
                     </div>
+                    <div class="packaging">
+                        <div class="accordion-item">
+                            <h2 class="title">
+                                Packaging:
+                            </h2>
+                            <ul>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                                        <path fill="#2F69FF" fill-rule="evenodd"
+                                            d="M4.397 5.913 9.63 0 12 1.816 4.755 10 0 6.129l2.022-2.15 2.375 1.934Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>
+                                        The doors are wrapped in plastic film and foam, covered in cardboard
+                                    </span>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="compatible">
+                        <div class="accordion-item">
+                            <p>
+                                In-stock single doors come with a single pre-drilled hole. Handles offered on the CG Hardware website do not come installed on the door upon delivery. The lock has to be installed after the door installation is complete.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="review">
+        <img class="review-bg" src="./triangles.svg" alt="">
+        <div class="container">
+            <h2 class="review__title">What Are The Reasons Behind So Many 5-Star Reviews?</h2>
+            <div class="review__content">
+                <div class="review__videos">
+                    <p>Excellent client service and second-to-none product quality</p>
+                    <div class="review__slider">
+                        <div>
+                            <div class="video-wrapper">
+                                <img class="play-btn" src="./play.svg" alt="">
+                            </div>
+                            <span>How to Install ROMANO Steel and Glass Partition with a Double Sliding Door</span>
+                        </div>
+                        <div>
+                            <div class="video-wrapper">
+                                <img class="play-btn" src="./play.svg" alt="">
+                            </div>
+                            <span>How to Install ROMANO Steel and Glass Partition with a Double Sliding Door</span>
+                        </div>
+                        <div>
+                            <div class="video-wrapper">
+                                <img class="play-btn" src="./play.svg" alt="">
+                            </div>
+                            <span>How to Install ROMANO Steel and Glass Partition with a Double Sliding Door</span>
+                        </div>
+                        <div>
+                            <div class="video-wrapper">
+                                <img class="play-btn" src="./play.svg" alt="">
+                            </div>
+                            <span>How to Install ROMANO Steel and Glass Partition with a Double Sliding Door</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review__info">
+                    <h3>More than <span>30,000</span> followers on Instagram and <span>6,400</span> on Facebook</h3>
+                    <img src="./review-img.png" alt="phones-img">
+                </div>
+                <div class="review__social">
+                    <p class="review__text">Join us in social media</p>
+                    <ul class="review__list">
+                        <li><img src="./insta.svg" alt=""></li>
+                        <li><img src="./facebook.svg" alt=""></li>
+                        <li><img src="./youtube.svg" alt=""></li>
+                        <li><img src="./pinterest.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
