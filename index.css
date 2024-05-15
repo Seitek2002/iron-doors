@@ -290,12 +290,16 @@ span.product_label-tooltip-span {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 7px;
     padding-top: 10px;
+    
 }
 
 .select-box img {
     min-width: 58px;
     height: 58px;
     cursor: pointer;
+    border: 2px solid #2f69ff;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .select-box__item {
