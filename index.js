@@ -61,13 +61,31 @@ accordeons.forEach((item) => {
   });
 });
 
+// const x = document.querySelectorAll(".select-box__item");
+
+// x.forEach((item) => {
+//   item.querySelector(".accordeon__label").addEventListener("click", () => {
+//     item.classList.toggle("active");
+//   });
+// });
+
 const selectBox = document.querySelectorAll(".select-box");
 
 selectBox.forEach((box) => {
-  box.querySelectorAll(".select-box__item").forEach((item) => {
+  box.querySelectorAll(".select-box__item.first").forEach((item) => {
     item.addEventListener("click", () => {
+      accordeons[1].classList.add('active')
       box
-        .querySelectorAll(".select-box__item")
+        .querySelectorAll(".select-box__item.first")
+        .forEach((item) => item.classList.remove("active"));
+      item.classList.add("active");
+    });
+  });
+  box.querySelectorAll(".select-box__item.second").forEach((item) => {
+    item.addEventListener("click", () => {
+      accordeons[3].classList.add('active')
+      box
+        .querySelectorAll(".select-box__item.second")
         .forEach((item) => item.classList.remove("active"));
       item.classList.add("active");
     });
