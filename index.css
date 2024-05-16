@@ -63,15 +63,18 @@ body {
     background: #fff;
     border: none;
     color: #404D63;
-    width: 8px;
-    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .plus {
     background: #fff;
     border: none;
     color: #404D63;
-    width: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box {
@@ -91,24 +94,6 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width:426px) {
-    .pay {
-        flex-wrap: wrap;
-        font-size: 24px;
-    }
-
-    .btn {
-        width: 100%;
-        margin-top: 13px;
-        padding: 20px 67px;
-        font-size: 24px;
-    }
-
-    .counter {
-        margin-right: 0px;
-    }
-}
-
 .pay h4 {
     font-size: 32px;
     font-weight: 700;
@@ -117,21 +102,31 @@ body {
     flex: 1;
 }
 
-@media screen and (max-width:320px) {
-    .pay h4 {
-        text-align: center;
-        font-size: 24px;
-    }
-
+@media screen and (max-width:426px) {
     .pay {
+        flex-wrap: wrap;
         justify-content: center;
     }
 
+    .pay h4 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 13px;
+        padding: 10px 0;
+        font-size: 24px;
+    }
+
     .counter {
-        margin-top: 10px;
+        margin-right: 0px;
+        padding: 10px 15px;
+        font-size: 12px;
+        gap: 15px;
     }
 }
-
 
 .select {
     display: grid;
@@ -285,8 +280,6 @@ span.product_label-tooltip-span {
 }
 
 .select-box .img {
-    min-width: 58px;
-    height: 58px;
     cursor: pointer;
     border: 2px solid transparent;
     padding: 5px;
@@ -296,8 +289,18 @@ span.product_label-tooltip-span {
     gap: 10px;
 }
 
+.select-box img {
+    min-width: 58px;
+}
+
 .select-box .img.active {
     border: 2px solid #2f69ff;
+}
+
+@media screen and (max-width: 426px) {
+    .select-box .img {
+        font-size: 12px;
+    }
 }
 
 .select-box__item {
@@ -311,6 +314,12 @@ span.product_label-tooltip-span {
     border: 2px solid #2f69ff;
     transition: 0.5s ease;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 426px) {
+    .select-box__item {
+        min-height: 30px;
+    }
 }
 
 .select-box__item.active {
@@ -417,6 +426,7 @@ span.product_label-tooltip-span {
 .single-product__slider {
     max-width: 40%;
     max-height: 584px;
+    margin: 0 auto;
 }
 
 .single-product__shipping {
@@ -562,6 +572,13 @@ span.product_label-tooltip-span {
         font-size: 26px;
     }
 }
+
+@media screen and (max-width: 426px) {
+    .single-product__info h1 {
+        display: none;
+    }
+}
+
 
 .review {
     font-family: 'Gilroy';
@@ -765,6 +782,7 @@ span.product_label-tooltip-span {
 
     .doors-description__content {
         flex-direction: column;
+        align-items: flex-start;
         gap: 10px;
     }
 }
