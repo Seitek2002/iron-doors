@@ -4,10 +4,9 @@ $(".single-product__slider").slick({
   slidesToScroll: 1,
   arrows: false,
   dots: true,
-  mobileFirst: true,
   responsive: [
     {
-      breakpoint: 1022,
+      breakpoint: 768,
       settings: {
         arrows: true,
       },
@@ -116,12 +115,13 @@ const span = counter.querySelector(".span");
 const minusButton = counter.querySelector(".minus");
 const plusButton = counter.querySelector(".plus");
 
-let count = 0;
-span.textContent = count;
+let count = 1;
 
 minusButton.addEventListener("click", () => {
-  count--;
-  span.textContent = count < 0 ? 0 : count; 
+  if(count != 1) {
+    count--;
+    span.textContent = count < 1 ? 1 : count; 
+  }
 });
 
 plusButton.addEventListener("click", () => {
