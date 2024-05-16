@@ -42,11 +42,10 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .pay {
         gap: 0px;
         justify-content: space-between;
-
     }
 }
 
@@ -54,7 +53,7 @@ body {
     padding: 15px 18px;
     display: flex;
     gap: 25px;
-    border: 1px solid #D8D9DA;
+    border: 1px solid #d8d9da;
     border-radius: 555px;
     margin-right: 19px;
 }
@@ -62,7 +61,7 @@ body {
 .minus {
     background: #fff;
     border: none;
-    color: #404D63;
+    color: #404d63;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +70,7 @@ body {
 .plus {
     background: #fff;
     border: none;
-    color: #404D63;
+    color: #404d63;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,8 +83,8 @@ body {
 
 .btn {
     padding: 15px 67px;
-    background: #2491EB;
-    color: #FFFFFF;
+    background: #2491eb;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 700;
     outline: none;
@@ -97,12 +96,12 @@ body {
 .pay h4 {
     font-size: 32px;
     font-weight: 700;
-    color: #404D63;
+    color: #404d63;
     margin: 0;
     flex: 1;
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width: 426px) {
     .pay {
         flex-wrap: wrap;
         justify-content: center;
@@ -116,8 +115,8 @@ body {
     .btn {
         width: 100%;
         margin-top: 13px;
+        font-size: 14px;
         padding: 10px 0;
-        font-size: 24px;
     }
 
     .counter {
@@ -251,7 +250,7 @@ span.product_label-tooltip-span {
     opacity: 0.5;
 }
 
-.accordeon__label>span {
+.accordeon__label > span {
     font-size: 14px;
     font-weight: 700;
     color: #231f20;
@@ -276,7 +275,6 @@ span.product_label-tooltip-span {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 7px;
     padding-top: 10px;
-    
 }
 
 .select-box .img {
@@ -413,7 +411,7 @@ span.product_label-tooltip-span {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #404D63;
+    color: #404d63;
     margin-left: 12px;
     margin-bottom: 6px;
 }
@@ -436,7 +434,7 @@ span.product_label-tooltip-span {
     justify-content: center;
     width: 100%;
     margin-top: 15px;
-    color: #404D63;
+    color: #404d63;
     border-radius: 6px;
 }
 
@@ -445,13 +443,13 @@ span.product_label-tooltip-span {
     font-size: 12px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .single-product__shipping {
         background: linear-gradient(90deg, rgba(34, 191, 116, 0.15) 100%);
         justify-content: flex-start;
         padding: 11px 0;
         padding-left: 13px;
-    border-radius: 15px;
+        border-radius: 15px;
     }
 
     .single-product__shipping span {
@@ -459,9 +457,10 @@ span.product_label-tooltip-span {
     }
 }
 
-@media screen and (max-width:768px) {
-    .single-product__slider{
+@media screen and (max-width: 768px) {
+    .single-product__slider {
         max-width: 100%;
+        max-height: initial;
     }
 }
 
@@ -505,7 +504,6 @@ span.product_label-tooltip-span {
 }
 
 @media screen and (min-width: 768px) {
-
     .select-box,
     .select-box.rounded {
         display: flex;
@@ -579,7 +577,6 @@ span.product_label-tooltip-span {
     }
 }
 
-
 .review {
     font-family: 'Gilroy';
     margin-top: 57px;
@@ -597,16 +594,15 @@ span.product_label-tooltip-span {
     gap: 20px;
     align-items: center;
 }
-.review__list{
+.review__list {
     display: flex;
     gap: 6px;
 }
-.review__text{
+.review__text {
     font-size: 20px;
     font-weight: 500;
-    
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .review-bg {
         top: 75%;
     }
@@ -616,43 +612,42 @@ span.product_label-tooltip-span {
     }
 }
 
-@media screen and (max-width:425px) {
-    .review__text{
+@media screen and (max-width: 425px) {
+    .review__text {
         font-size: 18px;
     }
 }
-@media screen and (max-width:320px) {
-    .review__text{
+@media screen and (max-width: 320px) {
+    .review__text {
         font-size: 14px;
     }
 }
 
-
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .review-bg {
         top: 80%;
     }
 }
 
 .review__title {
-    color: #404D63;
+    color: #404d63;
     font-size: 22px;
     max-width: 532px;
 }
 
 .review__videos p {
-    color: #2491EB;
+    color: #2491eb;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 54px;
 }
 
 .review__info h3 {
-    color: #404D63;
+    color: #404d63;
 }
 
 .review__info h3 span {
-    color: #2491EB;
+    color: #2491eb;
 }
 
 .review__info img {
@@ -667,7 +662,8 @@ span.product_label-tooltip-span {
     position: relative;
     z-index: 99;
     height: 139px;
-    background: url('https://crystaliaglass.com/wp-content/uploads/2022/06/%D0%91%D0%B5%D0%B7-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1.jpg') center no-repeat;
+    background: url('https://crystaliaglass.com/wp-content/uploads/2022/06/%D0%91%D0%B5%D0%B7-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1.jpg')
+        center no-repeat;
     background-size: cover;
 }
 
@@ -682,7 +678,7 @@ span.product_label-tooltip-span {
 }
 
 .review__videos span {
-    color: #404D63;
+    color: #404d63;
     font-weight: 700;
     font-size: 16px;
     display: block;
@@ -738,8 +734,8 @@ span.product_label-tooltip-span {
 
 .doors-description {
     font-family: 'Gilroy';
-    color: #404D63;
-    background: #F8F8F8;
+    color: #404d63;
+    background: #f8f8f8;
     padding: 50px 0;
     margin-top: 57px;
 }
@@ -760,7 +756,7 @@ span.product_label-tooltip-span {
 }
 
 .blue-divider {
-    background: #2491EB;
+    background: #2491eb;
     height: 2px;
     width: 32px;
 }
@@ -774,7 +770,7 @@ span.product_label-tooltip-span {
     justify-content: space-between;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .doors-description__details .flex {
         flex-wrap: wrap;
         flex-direction: column;
@@ -787,7 +783,7 @@ span.product_label-tooltip-span {
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .accordion-item li span {
         font-size: 14px;
     }
