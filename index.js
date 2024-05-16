@@ -2,13 +2,13 @@ $(".single-product__slider").slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
   dots: true,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 769,
       settings: {
-        arrows: true,
+        arrows: false,
       },
     },
   ],
@@ -114,17 +114,31 @@ const counter = document.getElementById("counter");
 const span = counter.querySelector(".span");
 const minusButton = counter.querySelector(".minus");
 const plusButton = counter.querySelector(".plus");
+const priceElement = document.getElementById("price");
+
+let initialPrice = parseFloat(
+  priceElement.textContent.replace("$", "").replace(",", "")
+);
 
 let count = 1;
+span.textContent = count;
 
 minusButton.addEventListener("click", () => {
-  if(count != 1) {
+  if (count > 1) {
     count--;
-    span.textContent = count < 1 ? 1 : count; 
+    span.textContent = count < 1 ? 1 : count;
+    updatePrice(count);
   }
 });
 
 plusButton.addEventListener("click", () => {
   count++;
   span.textContent = count;
+  updatePrice(count);
 });
+function updatePrice(quantity) {
+  const totalPrice = initialPrice * quantity;
+  priceElement.textContent = '$'+ totalPrice
+    .toFixed(2)
+    .replace(/\d(?=(\d{3})+\.)/g, "$&,"); // Форматируем и обновляем цену
+}

@@ -159,6 +159,7 @@ body {
     text-align: center;
     background: #fff;
     transition: box-shadow 0.5s;
+    cursor: pointer;
 }
 
 .select-img {
@@ -394,6 +395,12 @@ span.product_label-tooltip-span {
     color: #231f20;
     opacity: 0.5;
     font-family: 'Jost';
+}
+
+@media screen and (max-width: 768px) {
+    .compatible p {
+        display: none;
+    }
 }
 
 .accordion-item li span {
