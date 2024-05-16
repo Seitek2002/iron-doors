@@ -417,6 +417,7 @@ span.product_label-tooltip-span {
 }
 
 .accordion-item .title {
+    margin: 15px 0;
     font-weight: 700;
     font-size: 18px;
 }
@@ -749,6 +750,9 @@ span.product_label-tooltip-span {
 
 .doors-description__info {
     max-width: 603px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .doors-description__info h2 {
