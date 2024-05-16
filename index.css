@@ -406,6 +406,10 @@ span.product_label-tooltip-span {
     }
 }
 
+.accordion-item li {
+    margin: 3px 0;
+}
+
 .accordion-item li span {
     font-family: 'Jost';
     font-weight: 400;
