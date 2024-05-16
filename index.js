@@ -60,14 +60,6 @@ accordeons.forEach((item) => {
   });
 });
 
-// const x = document.querySelectorAll(".select-box__item");
-
-// x.forEach((item) => {
-//   item.querySelector(".accordeon__label").addEventListener("click", () => {
-//     item.classList.toggle("active");
-//   });
-// });
-
 const selectBox = document.querySelectorAll(".select-box");
 
 selectBox.forEach((box) => {
@@ -80,9 +72,26 @@ selectBox.forEach((box) => {
       item.classList.add("active");
     });
   });
-  box.querySelectorAll(".select-box__item.second").forEach((item) => {
+  box.querySelectorAll(".second").forEach((item) => {
+    item.addEventListener("click", () => {
+      accordeons[2].classList.add('active')
+      box
+        .querySelectorAll(".select-box__item.second")
+        .forEach((item) => item.classList.remove("active"));
+      item.classList.add("active");
+    });
+  });
+  box.querySelectorAll(".select-box__item.third").forEach((item) => {
     item.addEventListener("click", () => {
       accordeons[3].classList.add('active')
+      box
+        .querySelectorAll(".select-box__item.third")
+        .forEach((item) => item.classList.remove("active"));
+      item.classList.add("active");
+    });
+  });
+  box.querySelectorAll(".fourth").forEach((item) => {
+    item.addEventListener("click", () => {
       box
         .querySelectorAll(".select-box__item.second")
         .forEach((item) => item.classList.remove("active"));
@@ -99,16 +108,6 @@ tooltip.addEventListener("click", (e) => {
     .querySelector(".product_label-tooltip.product_label-tooltip--visible")
     .classList.toggle("active");
 });
-
-function openModal() {
-  // document.getElementById('myModal').style.display = 'block'
-  // document.body.style.overflow = 'hidden'
-}
-
-function closeModal() {
-  // document.getElementById('myModal').style.display = 'none'
-  // document.body.style.overflow = 'auto'
-}
 
 const counter = document.getElementById("counter");
 const span = counter.querySelector(".span");

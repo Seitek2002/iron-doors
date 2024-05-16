@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('./fonts/Gilroy/stylesheet.css');
 
-@font-face {
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'),
-        url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
-}
-
 .slick-dotted.slick-slider {
     margin-bottom: 30px;
 }
@@ -295,13 +284,16 @@ span.product_label-tooltip-span {
     
 }
 
-.select-box img {
+.select-box .img {
     min-width: 58px;
     height: 58px;
     cursor: pointer;
     border: 2px solid #2f69ff;
     padding: 5px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .select-box__item {
