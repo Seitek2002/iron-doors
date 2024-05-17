@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('./fonts/Gilroy/stylesheet.css');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("./fonts/Gilroy/stylesheet.css");
 
 .slick-dotted.slick-slider {
     margin-bottom: 30px;
@@ -24,6 +24,7 @@ body {
 
 .single-product {
     font-family: Jost;
+    padding-bottom: 75px;
 }
 
 .single-product__slider img {
@@ -170,6 +171,7 @@ body {
 .accordeon {
     border-bottom: 2px solid rgba(217, 217, 217, 0.3);
     padding: 10px 0;
+    margin-top: 32px;
 }
 
 .accordeon__label {
@@ -189,7 +191,7 @@ span.product_label-tooltip-span {
     width: 18px;
     height: 18px;
     border: 1.5px solid rgba(35, 31, 32, 0.1);
-    font-family: 'Jost-Bold';
+    font-family: "Jost-Bold";
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -236,7 +238,7 @@ span.product_label-tooltip-span {
 }
 
 .product_label-tooltip-cont p {
-    font-family: 'Circe', 'Jost';
+    font-family: "Circe", "Jost";
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -312,6 +314,7 @@ span.product_label-tooltip-span {
     border: 2px solid #2f69ff;
     transition: 0.5s ease;
     opacity: 0.5;
+    box-sizing: border-box
 }
 
 @media screen and (max-width: 426px) {
@@ -332,8 +335,11 @@ span.product_label-tooltip-span {
     min-width: 27px;
     height: 27px;
     width: 100%;
-    margin-top: 4px;
+    margin: 2px 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .select-box.rounded {
@@ -364,7 +370,6 @@ span.product_label-tooltip-span {
     opacity: 0.5;
     transition: 0.5s ease;
     text-align: center;
-    margin-top: 10px;
 }
 
 .rounded .select-box__item.active {
@@ -377,27 +382,61 @@ span.product_label-tooltip-span {
     height: 28px;
     cursor: pointer;
 }
-
-.doors-description {
-    padding-top: 10px;
-}
-
-.details-and-specs,
 .handle-and-lock-specs,
+.details-and-specs,
+.doors-description,
 .compatible,
 .hinges,
 .packaging {
-    margin-bottom: 26px;
+    margin-bottom: 36px;
 }
 
+.hinges,
+.handle-and-lock-specs {
+    width: 70%;
+}
+
+.approximate_weight,
+.details-and-specs {
+    width: 30%;
+}
+
+@media screen and (max-width:1390px) {
+    .hinges,
+.handle-and-lock-specs {
+    width: 60%;
+}
+
+.approximate_weight,
+.details-and-specs {
+    width: 40%;
+}
+}
+@media screen and (max-width:1115px) {
+    .hinges,
+.handle-and-lock-specs {
+    width: 50%;
+}
+
+.approximate_weight,
+.details-and-specs {
+    width: 50%;
+}
+}
+
+
+.flex {
+    gap: 15px;
+}
 .compatible p {
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 17px;
     color: #231f20;
     opacity: 0.5;
-    font-family: 'Jost';
+    font-family: "Jost";
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -411,7 +450,7 @@ span.product_label-tooltip-span {
 }
 
 .accordion-item li span {
-    font-family: 'Jost';
+    font-family: "Jost";
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -421,24 +460,28 @@ span.product_label-tooltip-span {
 }
 
 .accordion-item .title {
-    margin: 15px 0;
+    margin: 0;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 18px;
 }
+.accordion-item ul {
+    margin: 0;
+}
 
 .single-product__slider {
-    max-width: 40%;
+    max-width: 45%;
     max-height: 584px;
     margin: 0 auto;
 }
 
 .single-product__shipping {
-    background: rgb(34, 191, 116, 0.15);
+    background: #DEF5EA;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 28px;
     color: #404d63;
     border-radius: 6px;
 }
@@ -450,7 +493,6 @@ span.product_label-tooltip-span {
 
 @media screen and (min-width: 768px) {
     .single-product__shipping {
-        background: linear-gradient(90deg, rgba(34, 191, 116, 0.15) 100%);
         justify-content: flex-start;
         padding: 11px 0;
         padding-left: 13px;
@@ -572,7 +614,7 @@ span.product_label-tooltip-span {
 
 @media screen and (min-width: 1024px) {
     .single-product__info h1 {
-        font-size: 26px;
+        font-size: 32px;
     }
 }
 
@@ -583,7 +625,7 @@ span.product_label-tooltip-span {
 }
 
 .review {
-    font-family: 'Gilroy';
+    font-family: "Gilroy";
     margin-top: 57px;
     position: relative;
 }
@@ -667,7 +709,7 @@ span.product_label-tooltip-span {
     position: relative;
     z-index: 99;
     height: 139px;
-    background: url('https://crystaliaglass.com/wp-content/uploads/2022/06/%D0%91%D0%B5%D0%B7-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1.jpg')
+    background: url("https://crystaliaglass.com/wp-content/uploads/2022/06/%D0%91%D0%B5%D0%B7-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1.jpg")
         center no-repeat;
     background-size: cover;
 }
@@ -738,7 +780,7 @@ span.product_label-tooltip-span {
 }
 
 .doors-description {
-    font-family: 'Gilroy';
+    font-family: "Gilroy";
     color: #404d63;
     background: #f8f8f8;
     padding: 50px 0;
@@ -756,11 +798,18 @@ span.product_label-tooltip-span {
     max-width: 603px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+   margin: 0;
 }
 
 .doors-description__info h2 {
     font-size: 36px;
+    margin: 35px 0 26px;
+}
+.doors-description__info p {
+    margin: 36px 0 0 0;
+}
+.doors-description__info p:not(:first-child) {
+    margin-top: 22px;
 }
 
 .blue-divider {
