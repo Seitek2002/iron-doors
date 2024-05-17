@@ -102,15 +102,10 @@ body {
     flex: 1;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 585px) {
     .pay {
         flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .pay h4 {
-        text-align: left;
-        font-size: 20px;
+        gap: 30px;
     }
 
     .btn {
@@ -118,6 +113,19 @@ body {
         margin-top: 13px;
         font-size: 14px;
         padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .pay {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .pay h4 {
+        text-align: left;
+        font-size: 20px;
     }
 
     .counter {
@@ -651,7 +659,7 @@ span.product_label-tooltip-span {
 }
 @media screen and (max-width: 768px) {
     .review-bg {
-        top: 75%;
+        top: 68%;
     }
     .review__social {
         display: flex;
@@ -663,6 +671,9 @@ span.product_label-tooltip-span {
     .review__text {
         font-size: 18px;
     }
+    .review-bg {
+        top: 74%;
+    }
 }
 @media screen and (max-width: 320px) {
     .review__text {
@@ -672,7 +683,7 @@ span.product_label-tooltip-span {
 
 @media screen and (max-width: 320px) {
     .review-bg {
-        top: 80%;
+        top: 76%;
     }
 }
 
@@ -751,6 +762,12 @@ span.product_label-tooltip-span {
 
     .review__info h3 {
         font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .review__info h3 {
+        font-size: 18px;
     }
 }
 
